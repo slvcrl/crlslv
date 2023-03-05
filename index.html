@@ -1,56 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salva Portfolio</title>
-
-    <!-- All CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d8256b5580.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d8256b5580.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
-    
 </head>
+
 <body>
-  
-    <!-- header section starts  -->
+    <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-warning">C</span>arlo.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>  
+              </li>
+              <a class="nav-link" href="#service">Service</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>     
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>     
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <header class="header">
-        
-        <a class="logo" href="#"><b><span style="color: #DC7633;">C</span>arlo.</b></a>
+    <header>
+        <section class="header">
+            <div class="container-lg mt-4">
+                <div class="row">
+                    <div class="col-lg-6 p-5">
+                        <div class="content">
+                            <div class="content-header">
+                              <h3>Hi, I'm <span>Carlo</span> Salva from the Philippines.</h3>
+                            </div>
+                            <div class="content-body">
+                                <p> Meow meow</p>
+                                <a class="btn btn-success" href="#service">TRY NOW</a>
+                            </div>
+                        </div>
 
-        <nav class=navbar>
-            <a class="hover-underline-animation" href="index.html">Home</a>
-            <a class="hover-underline-animation" href="about-me.html">About</a>
-            <a class="hover-underline-animation" href="services.html">Services</a>
-            <a class="hover-underline-animation" href="portfolio.html">Portfolio</a>
-            <a class="hover-underline-animation" href="contact.html">Contact</a>
-        </nav>
-
+                    </div>
+                    <div class="col-lg-6 p-5">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" data-aos="fade-up-right">
+                                <div class="carousel-item active">
+                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <!-- header section ends -->
+     <!-- about section starts -->
+     <section id="about" class="about section-padding">
+        <div class="numbers-collected text-center">
+          <h5 >Total Words Collected</h5>
+          <div class="countdown">
+            <div class="number">
+              <p ><strong>1,349,820</strong></p>
+            </div>
+          </div>
+          <div class="number-today">
+            <h5 >TODAY</h5>
+            <div class="numbers">
+              <p ><strong>820</strong></p>
+            </div>
+          </div>
+          <div class="number-last">
+            <h5 >LAST WEEK</h5>
+            <div class="numbers">
+              <p ><strong>15,024</strong></p>
+            </div>
+          </div>
+          <div class="number-last">
+            <h5 >LAST MONTH</h5>
+            <div class="numbers">
+              <p ><strong>200,221</strong></p>
+            </div>
+          </div>
+      </div>
+      </section>
+      <!-- about section Ends -->
 
-    <!-- home section starts  -->
+      <!-- service section starts -->
+      <section id="service" class="about section-padding">
+        <div class="tweet-box">
+          <h2 class="text-center">Enter a Phrase or Sentence and the SIDetect will evaluate if it contains suicidal ideation or not.</h2>
+            <textarea name="message" rows="10" placeholder="Input the tweet here" required></textarea><br>
+            <button class="enterbtn" data-bs-toggle="modal" data-bs-target="#oneexampleModal" >ENTER</button>
 
-    <section class="home" id="home">
-
-        <div class="content">
-            <h3>Hi, I'm <span>Carlo</span> Salva from the Philippines.</h3>
-            <img src="images/mypic.jpg" alt="myself">
+            <div div class="modal fade" id="oneexampleModal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                          <div class="card">
+                              <p class="card-text text-center">YES</p>
+                              <a class="btn btn-success" href="help.html">HELP IS AVAILABLE</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
+      </section>
+      <!-- service section Ends -->
 
-    </section>
+     
+     
+      <!-- footer starts -->
+      <footer class="bg-dark p-2 text-center">
+          <div class="container">
+              <p class="text-white">2022 All Right Reserved by SIDetect </p>
+          </div>
+      </footer>
+      <!-- footer ends -->
 
-    <!-- home section ends -->
 
-    <!-- footer section starts  -->
 
-    <footer>
- 
-    </footer>
-  
-    <!-- footer section ends -->
 
-    
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
