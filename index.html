@@ -19,11 +19,11 @@
     
 <!-- header section starts  -->
 
-<header>
+<header class="header" id="navbar">
         
     <a class="logo" href="#"><b><span style="color: #DC7633;">C</span>arlo.</b></a>
 
-    <nav class=navbar id="navbar">
+    <nav class="navbar" id="navbar">
         <ul class="nav-menu">
             <li class="nav-item">
              <a href="#home">home</a>
@@ -300,33 +300,6 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
-<script>
-    const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}))
-
-
-var lastScrollTop;
-navbar = document.getElementById('navbar');
-window.addEventListener('scroll',function(){
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if(scrollTop > lastScrollTop){
-navbar.style.top='-80px';
-}
-else{
-navbar.style.top='0';
-}
-lastScrollTop = scrollTop;
-});
-    </script>
 </body>
 </html>
