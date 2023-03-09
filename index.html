@@ -1,166 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salva Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/d8256b5580.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d8256b5580.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><span class="text-warning">C</span>arlo.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>  
-              </li>
-              <a class="nav-link" href="#service">Service</a>
-              </li>    
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>     
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>     
-            </ul>
-          </div>
+
+<div id="hamburger" class="fas fa-bars hamburger"></div>
+    
+<!-- header section starts  -->
+
+<header>
+        
+    <a class="logo" href="#"><b><span style="color: #DC7633;">C</span>arlo.</b></a>
+
+    <nav class=navbar id="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+             <a href="#home">home</a>
+            </li>
+            <li class="nav-item">
+             <a href="#about">about</a>
+            </li>
+            <li class="nav-item">
+             <a href="#experience">education</a>
+            </li>
+            <li class="nav-item">
+             <a href="#portfolio">portfolio</a>
+            </li>
+            <li class="nav-item">
+             <a href="#contact">contact</a>
+            </li>
+         </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Hi, I'm <span>Carlo</span> Salva</h3>
+        <p>Bachelor of Science in Computer Science - Student</p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+ 
+    <div class="image">
+        <img src="images/mypic.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> about <span> me </span> </h1>
+
+<div class="row-1">
+
+    <div class="image">
+        <img src="images/myphoto.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3> I am Carlo M. Salva  <a href="/images/CV-SALVA.pdf" class="btn" download>download CV</a> </h3> 
+        <p align="justify">I am a Fourth year student from Technological University of the Philippines, currently taking up Bachelor of Science in Computer Science and is seeking on-the-job training to learn more and apply my knowledge and skills  for continuous improvement.</p>
+        <div class="box-container">
+            <div class="box">
+                <p> <span> age : </span> 20 </p>
+                <p> <span> gender : </span> male </p>
+                <p> <span> language : </span> filipino, english </p>
+            </div>
+            <div class="box">
+                <p> <span> phone : </span> +(63)95 0981 8855 </p>
+                <p> <span> email : </span> salvacarlo.monzales@gmail.com </p>
+                <p> <span> country : </span> Philippines </p>
+            </div>
         </div>
-      </nav>
+        <h1 class="heading"> <span> my </span> skills </h1>
+        <div class="row-2">
 
-    <header>
-        <section class="header">
-            <div class="container-lg mt-4">
-                <div class="row">
-                    <div class="col-lg-6 p-5">
-                        <div class="content">
-                            <div class="content-header">
-                              <h3>Hi, I'm <span>Carlo</span> Salva from the Philippines.</h3>
-                            </div>
-                            <div class="content-body">
-                                <p> Meow meow</p>
-                                <a class="btn btn-success" href="#service">TRY NOW</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6 p-5">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" data-aos="fade-up-right">
-                                <div class="carousel-item active">
-                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/mypic.jpg" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="skills">
+                <div class="progress">
+                    <h3> computer literate <span> 90% </span> </h3>
+                    <div class="bar"> <span></span> </div>
+                </div>
+                <div class="progress">
+                    <h3> c programming <span> 50% </span> </h3>
+                    <div class="bar"> <span></span> </div>
+                </div>
+                <div class="progress">
+                    <h3> HTML <span> 75% </span> </h3>
+                    <div class="bar"> <span></span> </div>
+                </div>
+                <div class="progress">
+                    <h3> CSS <span> 75% </span> </h3>
+                    <div class="bar"> <span></span> </div>
                 </div>
             </div>
-        </section>
-    </header>
-
-     <!-- about section starts -->
-     <section id="about" class="about section-padding">
-        <div class="numbers-collected text-center">
-          <h5 >Total Words Collected</h5>
-          <div class="countdown">
-            <div class="number">
-              <p ><strong>1,349,820</strong></p>
-            </div>
-          </div>
-          <div class="number-today">
-            <h5 >TODAY</h5>
-            <div class="numbers">
-              <p ><strong>820</strong></p>
-            </div>
-          </div>
-          <div class="number-last">
-            <h5 >LAST WEEK</h5>
-            <div class="numbers">
-              <p ><strong>15,024</strong></p>
-            </div>
-          </div>
-          <div class="number-last">
-            <h5 >LAST MONTH</h5>
-            <div class="numbers">
-              <p ><strong>200,221</strong></p>
-            </div>
-          </div>
-      </div>
-      </section>
-      <!-- about section Ends -->
-
-      <!-- service section starts -->
-      <section id="service" class="about section-padding">
-        <div class="tweet-box">
-          <h2 class="text-center">Enter a Phrase or Sentence and the SIDetect will evaluate if it contains suicidal ideation or not.</h2>
-            <textarea name="message" rows="10" placeholder="Input the tweet here" required></textarea><br>
-            <button class="enterbtn" data-bs-toggle="modal" data-bs-target="#oneexampleModal" >ENTER</button>
-
-            <div div class="modal fade" id="oneexampleModal" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                      <div class="modal-body">
-                          <div class="card">
-                              <p class="card-text text-center">YES</p>
-                              <a class="btn btn-success" href="help.html">HELP IS AVAILABLE</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
         </div>
-      </section>
-      <!-- service section Ends -->
+        
+    </div>
 
-     
-     
-      <!-- footer starts -->
-      <footer class="bg-dark p-2 text-center">
-          <div class="container">
-              <p class="text-white">2022 All Right Reserved by SIDetect </p>
-          </div>
-      </footer>
-      <!-- footer ends -->
+</div>
 
 
+</section>
+
+<!-- about section ends -->
 
 
+<!-- experience section starts  -->
+
+<section class="experience" id="experience">
+
+    <h1 class="heading"> <span> my </span> education </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <span> 2019-2023 - Dean's Lister</span>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>Technological University of the Philippines -TUP </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2017-2019 - with Honors </span>
+                <h3>Science, Technology, Engineering, and Mathematics</h3>
+                <p>Polytechnic University of the Philippines - PUP </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span> 2013-2017 - with Honors </span>
+                <h3>Junior High School</h3>
+                <p>Antonio A. Maceda Integrated School - AAMIS </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- experience section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> my </span> portfolio </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/tnt.png" alt="">
+            <h3> The New Tayuman </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/sidetect.png" alt="">
+            <h3> SiDetect </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ias.png" alt="">
+            <h3> IAS-EMS</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/todolist.png" alt="">
+            <h3> My TO-DO-LIST </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/soon.jpg" alt="">
+            <h3> Coming soon </h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/soon.jpg" alt="">
+            <h3> coming soon</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>my email</h3>
+            <p>salvacarlo.monzales@gmail.com</p>
+            <p>carlo.salva@tup.edu.ph</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>my number</h3>
+            <p>+6395 0981 8855</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>my address</h3>
+            <p>manila, philippines</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="">
+
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+
+            <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+        <iframe class="map" src="https://maps.google.com/maps?q=Manila &t=k&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
 
 
+</section>
 
+<!-- contact section ends -->
 
+<!-- footer section  -->
+<footer class="footer"> 
+    <div class="follow">
+        <h1>Visit me on the following :</h1>
+        <a href="https://www.facebook.com/carlo.salva.161/" class="fab fa-facebook-f click"></a>
+        <a href="https://www.linkedin.com/in/carlo-salva-10ba68259/" class="fab fa-linkedin click"></a>
+        <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage&_ga=2.41879586.1464131570.1678351679-1936234344.1650199477" class="fa-solid fa-envelope click"></a>
+    </div>
+</footer>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
-
 </html>
